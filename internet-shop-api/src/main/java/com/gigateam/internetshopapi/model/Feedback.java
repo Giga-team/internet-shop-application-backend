@@ -1,5 +1,6 @@
 package com.gigateam.internetshopapi.model;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,8 +20,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "Orders")
-public class Order {
+@Table(name = "Feedbacks")
+public class Feedback {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -31,8 +32,11 @@ public class Order {
     @Column(name = "item_id")
     private String item_id;
 
-    @Column(name = "price")
-    private int price;
+    @Column(name = "rate")
+    private int rate;
+
+    @Column(name = "comment")
+    private String comment;
 
     @Override
     public boolean equals(Object o) {
@@ -44,8 +48,8 @@ public class Order {
             return false;
         }
 
-        Order order = (Order) o;
+        Feedback feedback = (Feedback) o;
 
-        return Objects.equals(id, order.id);
+        return Objects.equals(id, feedback.id);
     }
 }
