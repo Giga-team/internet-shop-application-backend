@@ -27,10 +27,10 @@ public class Feedback {
     private Long id;
 
     @Column(name = "user_id")
-    private String user_id;
+    private String userID;
 
     @Column(name = "item_id")
-    private String item_id;
+    private String itemID;
 
     @Column(name = "rate")
     private int rate;
@@ -51,5 +51,9 @@ public class Feedback {
         Feedback feedback = (Feedback) o;
 
         return Objects.equals(id, feedback.id);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

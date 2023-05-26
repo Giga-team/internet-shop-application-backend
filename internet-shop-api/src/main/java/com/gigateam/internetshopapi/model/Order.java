@@ -26,10 +26,10 @@ public class Order {
     private Long id;
 
     @Column(name = "user_id")
-    private String user_id;
+    private String userID;
 
     @Column(name = "item_id")
-    private String item_id;
+    private String itemID;
 
     @Column(name = "price")
     private int price;
@@ -47,5 +47,9 @@ public class Order {
         Order order = (Order) o;
 
         return Objects.equals(id, order.id);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
