@@ -31,6 +31,6 @@ public class Feedback {
   private String comment;
 
   @Column(name = "rate")
-  private Integer rate; //TODO: mb save as Enum?
+  private Integer rate;
 
 }
