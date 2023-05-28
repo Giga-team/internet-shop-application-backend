@@ -11,6 +11,5 @@ public class ItemDto {
     private String description;
     private BigDecimal price;
     private BigDecimal count;
-    private BigDecimal count;
 
 }
