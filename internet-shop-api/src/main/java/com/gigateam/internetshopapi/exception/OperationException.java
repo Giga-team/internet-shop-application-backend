@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor(staticName = "of")
 public class OperationException extends RuntimeException {
 
-    @Getter
-    private String userMessage;
+  @Getter
+  private String userMessage;
 
 }

@@ -12,13 +12,13 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class DefaultUserService implements UserService {
 
-    private final UserRepository repository;
-    private final UserMapper mapper;
+  private final UserRepository repository;
+  private final UserMapper mapper;
 
-    @Override
-    public Optional<UserDto> findById(Long id) {
-        return repository.findById(id)
-                .map(mapper::toDto);
-    }
+  @Override
+  public Optional<UserDto> findById(Long id) {
+    return repository.findById(id)
+        .map(mapper::toDto);
+  }
 
 }

@@ -23,7 +23,7 @@ public class Order {
   @ManyToOne(targetEntity = User.class)
   private Long userId;
 
-  @Column(name = "items")
-  private String items;
+  @Column(name = "item_id")
+  private Long itemId;
 
 }

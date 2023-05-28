@@ -8,11 +8,11 @@ import org.springframework.data.repository.query.Param;
 
 public interface FeedbackRepository extends JpaRepository<Feedback, Long> {
 
-    @Query("""
+  @Query("""
       SELECT f
       FROM Feedback f
       WHERE f.itemId = :itemId
   """)
-    List<Feedback> findAllByItemId(@Param("itemId") Long itemId);
+  List<Feedback> findAllByItemId(@Param("itemId") Long itemId);
 
 }

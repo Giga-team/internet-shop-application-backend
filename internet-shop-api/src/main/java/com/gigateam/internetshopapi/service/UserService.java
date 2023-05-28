@@ -5,6 +5,6 @@ import java.util.Optional;
 
 public interface UserService {
 
-    Optional<UserDto> findById(Long id);
+  Optional<UserDto> findById(Long id);
 
 }

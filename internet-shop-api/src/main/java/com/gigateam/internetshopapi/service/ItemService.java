@@ -5,6 +5,6 @@ import java.util.Optional;
 
 public interface ItemService {
 
-    Optional<ItemDto> findById(Long id);
+  Optional<ItemDto> findById(Long id);
 
 }

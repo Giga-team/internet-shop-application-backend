@@ -5,6 +5,6 @@ import java.util.List;
 
 public interface OrderService {
 
-    List<OrderDto> findAllByUserId(Long userId);
+  List<OrderDto> findAllByUserId(Long userId);
 
 }

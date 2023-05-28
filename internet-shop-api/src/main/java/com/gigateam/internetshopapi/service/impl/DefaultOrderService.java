@@ -13,14 +13,14 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class DefaultOrderService implements OrderService {
 
-    private final OrderRepository repository;
-    private final OrderMapper mapper;
+  private final OrderRepository repository;
+  private final OrderMapper mapper;
 
-    @Override
-    public List<OrderDto> findAllByUserId(Long userId) {
-        return repository.findAllByUserId(userId).stream()
-                .map(mapper::toDto)
-                .collect(Collectors.toList());
-    }
+  @Override
+  public List<OrderDto> findAllByUserId(Long userId) {
+    return repository.findAllByUserId(userId).stream()
+        .map(mapper::toDto)
+        .collect(Collectors.toList());
+  }
 
 }

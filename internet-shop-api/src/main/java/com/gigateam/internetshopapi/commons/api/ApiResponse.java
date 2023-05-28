@@ -10,8 +10,8 @@ import lombok.Data;
 @JsonInclude(Include.NON_NULL)
 public class ApiResponse<T> {
 
-    private final Status status;
-    private String message;
-    private T body;
+  private final Status status;
+  private String message;
+  private T body;
 
 }

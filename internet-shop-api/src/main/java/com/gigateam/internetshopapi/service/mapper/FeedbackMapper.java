@@ -9,11 +9,11 @@ import org.mapstruct.Mappings;
 @Mapper(componentModel = "spring")
 public abstract class FeedbackMapper {
 
-    @Mappings({
-            @Mapping(target = "id", ignore = true)
-    })
-    public abstract Feedback toEntity(FeedbackDto dto);
+  @Mappings({
+      @Mapping(target = "id", ignore = true)
+  })
+  public abstract Feedback toEntity(FeedbackDto dto);
 
-    public abstract FeedbackDto toDto(Feedback entity);
+  public abstract FeedbackDto toDto(Feedback entity);
 
 }

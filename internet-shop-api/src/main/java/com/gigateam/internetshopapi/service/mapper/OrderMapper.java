@@ -9,11 +9,11 @@ import org.mapstruct.Mappings;
 @Mapper(componentModel = "spring")
 public abstract class OrderMapper {
 
-    @Mappings({
-            @Mapping(target = "id", ignore = true)
-    })
-    public abstract Order toEntity(OrderDto dto);
+  @Mappings({
+      @Mapping(target = "id", ignore = true)
+  })
+  public abstract Order toEntity(OrderDto dto);
 
-    public abstract OrderDto toDto(Order entity);
+  public abstract OrderDto toDto(Order entity);
 
 }

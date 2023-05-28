@@ -5,6 +5,6 @@ import java.util.List;
 
 public interface FeedbackService {
 
-    List<FeedbackDto> findAllByItemId(Long itemId);
+  List<FeedbackDto> findAllByItemId(Long itemId);
 
 }

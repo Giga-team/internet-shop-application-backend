@@ -9,11 +9,11 @@ import org.mapstruct.Mappings;
 @Mapper(componentModel = "spring")
 public abstract class ItemMapper {
 
-    @Mappings({
-            @Mapping(target = "id", ignore = true)
-    })
-    public abstract Item toEntity(ItemDto dto);
+  @Mappings({
+      @Mapping(target = "id", ignore = true)
+  })
+  public abstract Item toEntity(ItemDto dto);
 
-    public abstract ItemDto toDto(Item entity);
+  public abstract ItemDto toDto(Item entity);
 
 }

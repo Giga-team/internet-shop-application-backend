@@ -9,11 +9,11 @@ import org.mapstruct.Mappings;
 @Mapper(componentModel = "spring")
 public abstract class UserMapper {
 
-    @Mappings({
-            @Mapping(target = "id", ignore = true)
-    })
-    public abstract User toEntity(UserDto dto);
+  @Mappings({
+      @Mapping(target = "id", ignore = true)
+  })
+  public abstract User toEntity(UserDto dto);
 
-    public abstract UserDto toDto(User entity);
+  public abstract UserDto toDto(User entity);
 
 }

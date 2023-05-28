@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController extends AbstractController {
 
-    @GetMapping("/help")
-    public ApiResponse<Object> help() {
-        if (1 == 1) {
-            throw OperationException.of("ABABBAAB");
-        }
-
-        return Responses.emptyResponse("Empty response");
+  @GetMapping("/help")
+  public ApiResponse<Object> help() {
+    if (1 == 1) {
+      throw OperationException.of("ABABBAAB");
     }
+
+    return Responses.emptyResponse("FAAFF");
+  }
 
 }

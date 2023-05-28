@@ -13,14 +13,14 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class DefaultFeedbackService implements FeedbackService {
 
-    private final FeedbackRepository repository;
-    private final FeedbackMapper mapper;
+  private final FeedbackRepository repository;
+  private final FeedbackMapper mapper;
 
-    @Override
-    public List<FeedbackDto> findAllByItemId(Long itemId) {
-        return repository.findAllByItemId(itemId).stream()
-                .map(mapper::toDto)
-                .collect(Collectors.toList());
-    }
+  @Override
+  public List<FeedbackDto> findAllByItemId(Long itemId) {
+    return repository.findAllByItemId(itemId).stream()
+        .map(mapper::toDto)
+        .collect(Collectors.toList());
+  }
 
 }
