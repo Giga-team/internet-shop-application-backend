@@ -31,6 +31,6 @@ public class Item {
   private BigDecimal count;
 
   @Column(name = "photoURL")
-  private String photoURL;
+  private BigDecimal count;
 
 }
