@@ -27,10 +27,4 @@ public class Item {
   @Column(name = "price")
   private BigDecimal price;
 
-  @Column(name = "count")
-  private BigDecimal count;
-
-  @Column(name = "photoURL")
-  private BigDecimal count;
-
 }
